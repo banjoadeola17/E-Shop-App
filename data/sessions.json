@@ -1,0 +1,19 @@
+{
+    "data": { 
+        "sessions": [
+            {
+                "id": "sgfyuuijk",
+                "title": "The Nomenclature!",
+                "description": "This describes events to be booked per session",
+                "startsAt": "10",
+                "endsAt": "4",
+                "room": "Atlanta",
+                "day": "",
+                "format": "Any format is acceptable!",
+                "track": ".NET",
+                "level": "one"
+            }
+        ] 
+        
+    }
+}    
