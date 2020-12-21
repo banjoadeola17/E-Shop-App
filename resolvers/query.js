@@ -10,10 +10,10 @@ module.exports = {
         }
         
     },
-    speakers: (parent, args, {dataSources}, info) => {
-        return dataSources.speakerAPI.getSpeakers();
+    speakers: async (parent, args, {dataSources}, info) => {
+        return await dataSources.speakerAPI.getSpeakers();
     },
-    speakerById: (parent, {id}, {dataSources}, info) => {
-        return dataSources.speakerAPI.getSpeakerById(id);
+    speakerById: async (parent, {id}, {dataSources}, info) => {
+        return await dataSources.speakerAPI.getSpeakerById(id);
     },
 };

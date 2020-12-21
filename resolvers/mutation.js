@@ -4,6 +4,11 @@ module.exports = {
     },
 
     addNewSession: (parent, { session }, { dataSources }, info) => {
-        return dataSources.sessionAPI.addSession(session);
+        return dataSources.sessionAPI.addNewSession(session);
+    },
+
+    makeSpeakerFeatured: async (parent, { id }, { dataSources }, info) => {
+        const speaker = await dataSources.speakerAPI.makeSpeakerFeatured(id);
+        return speaker;
     }
 };

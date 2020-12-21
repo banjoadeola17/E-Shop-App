@@ -30,6 +30,7 @@ type Error {
 type Mutation {
     toggleFavoriteSession(id: ID): Session
     addNewSession(session: session): Session
+    makeSpeakerFeatured(id: ID): Speaker
 }
 type Speaker {
     id: ID!
@@ -38,7 +39,7 @@ type Speaker {
     sessions: [Session]
 }
 
-input SessionInput {
+input sessionInput {
     title: String!,
     description: String,
     startsAt: String,
